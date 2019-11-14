@@ -1,0 +1,21 @@
+@import "../var-mix/mixin";
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  @include for-size(tablet-landscape-down) {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  @include for-size(phone-only) {
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}

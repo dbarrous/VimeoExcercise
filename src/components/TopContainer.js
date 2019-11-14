@@ -8,7 +8,7 @@ export const TopContainer = () => {
 
     <div id="topContainer">
       <VideoInfo
-        imageSrc={"https://i.vimeocdn.com/video/590587169_530x315.jpg"}
+        imageSrc={"https://i.vimeocdn.com/video/595198868_505x160.jpg"}
         imageAlt={"Title Image of Monsoon 3"}
         title={"Monsoon iii"}
         description={

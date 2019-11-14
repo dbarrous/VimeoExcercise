@@ -1,0 +1,41 @@
+@import "../var-mix/mixin";
+
+#bottomContainer {
+  color: white;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(94, 94, 97, 1) 40%
+  );
+
+  justify-content: center;
+  align-items: center;
+
+  @include for-size(tablet-landscape-down) {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .videoInfo {
+    margin-top: 80px;
+    margin-bottom: 10px;
+
+    &:first-child {
+      @include for-size(tablet-landscape-down) {
+        flex-direction: column;
+      }
+    }
+    @include for-size(phone-only) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom: 100px;
+  }
+}
