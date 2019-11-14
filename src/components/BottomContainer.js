@@ -3,6 +3,8 @@ import VideoInfo from "./VideoInfo";
 import "../css/components/_bottomContainer.scss";
 export const BottomContainer = () => {
   return (
+    //Bottom Container Component that contains the two VideoInfo Components
+
     <div id={"bottomContainer"}>
       <VideoInfo
         imageSrc={"https://i.vimeocdn.com/video/589972810_530x315.jpg"}

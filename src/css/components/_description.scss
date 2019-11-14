@@ -1,30 +1,47 @@
 @import "../var-mix/mixin";
 
 .description {
+  //Decription Box Styling
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  font-family: "Arial";
-  @include for-size("tablet-landscape-down") {
-    margin: 50px 10px;
-    min-width: 70vw;
-  }
-  @include for-size(phone-only) {
-    width: 95%;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-left: 3px;
-    margin-right: 3px;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+
+  // Description Title Styling
   &Title {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bolder;
   }
-
+  // Description Paragraph Styling
   &Paragraph {
     font-size: 13px;
     margin-top: 5px;
+  }
+
+  //Media Queries Mixin
+  @include for-size(tablet-landscape-down) {
+    margin: 50px 10px;
+    min-width: 70%;
+  }
+
+  @include for-size(phone-only) {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin: 0;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }

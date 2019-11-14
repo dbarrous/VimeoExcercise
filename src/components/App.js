@@ -5,7 +5,8 @@ import "../css/components/_body.scss";
 
 export const App = () => {
   return (
-    //   Body of the Webpage
+    //Body of the Webpage
+
     <div id="body">
       <TopContainer />
       <BottomContainer />

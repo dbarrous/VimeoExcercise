@@ -1,41 +1,66 @@
 @import "../var-mix/mixin";
 
 #bottomContainer {
+  //Styling for the Bottom Container
   color: white;
   width: 100vw;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: rgb(255, 255, 255);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(255, 255, 255, 1)),
+    color-stop(40%, rgba(94, 94, 97, 1))
+  );
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(94, 94, 97, 1) 40%
   );
-
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
+  //Media Queries Mixin
   @include for-size(tablet-landscape-down) {
     padding: 0;
     margin-top: 0;
   }
 
+  //Specific stlying for the VideoInfo Components that are in the Bottom Container
   .videoInfo {
     margin-bottom: 10px;
-
+    //Styling for first VideoInfo Component in the Bottom Container
     &:first-child {
       margin-top: 80px;
 
+      //Media Queries Mixin for the first VideoInfo Component
       @include for-size(tablet-landscape-down) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
     }
+
+    //Media Queries Mixin for both VideoInfo Components
     @include for-size(phone-only) {
       padding: 0;
       margin: 0;
     }
   }
+  //Styling for Last VideoInfo Component
   &:last-child {
     margin-bottom: 100px;
   }
