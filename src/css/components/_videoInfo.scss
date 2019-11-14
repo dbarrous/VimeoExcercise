@@ -1,7 +1,7 @@
 @import "../var-mix/mixin";
 .videoInfo {
   display: grid;
-  width: 90vw;
+  width: 85vw;
   height: 350px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
@@ -20,5 +20,6 @@
     margin: 0;
     padding: 50px 0px;
     height: auto;
+    width: 95vw;
   }
 }
