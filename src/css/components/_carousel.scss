@@ -1,0 +1,14 @@
+.carousel {
+  width: 600px;
+  margin: auto;
+
+  border: 5px solid black;
+  //   overflow: hidden;
+  overflow-x: hidden;
+
+  &View {
+    display: flex;
+    width: 100%;
+    height: 500px;
+  }
+}
