@@ -1,4 +1,5 @@
 .slide {
+  //Styling for the Slide Components
   width: 100%;
   height: 500px;
   -webkit-box-flex: 1;
@@ -17,6 +18,7 @@
   align-items: center;
   position: relative;
   .backgroundOverlay {
+    //Styling for the overlay that goes over the background image on the slide
     position: absolute;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.48);
@@ -24,6 +26,7 @@
     height: 100%;
   }
   .content {
+    //Styling for the content( Poster, Description, Buy/Trailer Button)
     width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31,6 +34,7 @@
   }
 
   &Poster {
+    //Styling for the Poster and the transparent effect placed over it
     z-index: 10;
 
     img {
@@ -71,6 +75,7 @@
     }
   }
   &Description {
+    //Styling for the Description box that contains the Title and Paragraph of the film
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

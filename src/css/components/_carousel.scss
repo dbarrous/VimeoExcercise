@@ -1,3 +1,4 @@
+//Styling for container of the Carousel Component
 .container {
   max-width: 1000px;
   display: flex;
@@ -5,6 +6,8 @@
   align-items: center;
   margin: auto;
 }
+
+//Styling for the Carousel Component which slides through the View Component Within It
 .carousel {
   width: 1000px;
   height: 500px;
@@ -31,6 +34,7 @@
       }
     }
   }
+  //Styling for the View Component that is nested in Carousel Component that contains all the movie slides
   &View {
     display: -webkit-box;
     display: -ms-flexbox;
