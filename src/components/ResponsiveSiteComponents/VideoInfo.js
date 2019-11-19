@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "./Image";
 import Description from "./Description";
-import "../css/components/_videoInfo.scss";
+import "../../css/components/_videoInfo.scss";
 
 export const VideoInfo = props => {
   //VideoInfo component recieves the props of imageSrc, imageAlt, title and description then assigns them to the proper components. Then decides whether to display it in reverse order based of the boolean prop displayReverse.

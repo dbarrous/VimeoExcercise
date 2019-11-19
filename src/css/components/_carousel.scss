@@ -1,14 +1,40 @@
-.carousel {
-  width: 600px;
+.container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+}
+.carousel {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
 
-  border: 5px solid black;
-  //   overflow: hidden;
-  overflow-x: hidden;
+  .button {
+    height: 50px;
+    position: relative;
+    bottom: 285px;
+    cursor: pointer;
 
+    &Left {
+      left: 60px;
+
+      &:hover {
+        content: url("/left-chevron-blue.png");
+      }
+    }
+    &Right {
+      left: 830px;
+      &:hover {
+        content: url("/right-chevron-blue.png");
+      }
+    }
+  }
   &View {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    height: 500px;
+    flex-basis: 100%;
   }
 }
