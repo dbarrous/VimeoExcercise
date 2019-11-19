@@ -16,7 +16,7 @@ To view each step,
 */
 
 //Renders the Responsive Site (Step 1)
-// ReactDOM.render(<App_ResponsiveSite />, document.getElementById("root"));
+ReactDOM.render(<App_ResponsiveSite />, document.getElementById("root"));
 
 //Renders Carousel the Virtual DOM with the App (Step 2)
-ReactDOM.render(<App_Carousel />, document.getElementById("root"));
+// ReactDOM.render(<App_Carousel />, document.getElementById("root"));
